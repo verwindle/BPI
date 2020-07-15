@@ -2,10 +2,11 @@
 
 ### Developing script for [BPI challenge 2020](https://icpmconference.org/2020/bpi-challenge/) based on pm4py lib
 
-ЧТО МОЖНО ИСПОЛЬЗОВАТЬ НА ДАННЫЙ МОМЕНТ:
-* Сразу прогнать первые 7 клеток
-Должен быть такой вид ![пример вида](https://github.com/verwindle/BPI/blob/devel/view.png)
-* Теперь есть доступ ко всем логам и ко всем датафреймам. Переменные logs, all_dfs.
+Что внутри:
+* Доступ ко всем логам и ко всем датафреймам, описаниям. Переменные logs, all_dfs, desc.
+* Вид загруженных таблиц ![пример вида](https://github.com/verwindle/BPI/blob/devel/view.png)
+* УДОБНЫЕ виджеты ![гифка](https://github.com/verwindle/BPI/blob/devel/widgets.gif)
+* Графики, еще пилится.
 
 __Код далее не оформлен, можно запускать на свое усмотрение.__
 
