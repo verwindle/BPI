@@ -1,0 +1,17 @@
+
+print('international case')
+
+df_obj = curr_df.select_dtypes(include=['category']).copy()
+display(df_obj.describe())
+
+display_inline(pd.DataFrame(curr_df.id_cat.value_counts()),\
+                 pd.DataFrame(curr_df.case_Amount).describe(),\
+                 pd.DataFrame(curr_df.case_BudgetNumber.value_counts()),\
+                 pd.DataFrame(curr_df.org_resource.value_counts()),\
+                 pd.DataFrame(curr_df.org_role.value_counts()),\
+                 pd.DataFrame(curr_df.concept_name.value_counts()),\
+                 pd.DataFrame(curr_df.case_Permit_TaskNumber.value_counts()),\
+                 pd.DataFrame(curr_df.case_Permit_OrganizationalEntity.value_counts()),\
+                 pd.DataFrame(curr_df.case_Permit_ActivityNumber.value_counts()),\
+                 pd.DataFrame(curr_df.case_Permit_BudgetNumber.value_counts()),\
+                 pd.DataFrame(curr_df.case_Permit_ProjectNumber.value_counts()));

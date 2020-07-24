@@ -1,0 +1,20 @@
+# %%capture travel_permitions_fields
+# travel_permitions_fields.show()
+
+print('travel permits')
+df_obj = curr_df.select_dtypes(include=['category']).copy()
+display(df_obj.describe())
+
+display_inline(pd.DataFrame(curr_df.id_cat.value_counts()),\
+                 pd.DataFrame(curr_df.case_RequestedAmount_0.describe()),\
+                 pd.DataFrame(curr_df.case_RequestedBudget.describe()),\
+                 pd.DataFrame(curr_df.case_BudgetNumber.value_counts()),\
+                 pd.DataFrame(curr_df.org_resource.value_counts()),\
+                 pd.DataFrame(curr_df.org_role.value_counts()),\
+                 pd.DataFrame(curr_df.case_Overspent.value_counts()),\
+                 pd.DataFrame(curr_df.concept_name.value_counts()),\
+                 pd.DataFrame(curr_df.case_TaskNumber.value_counts()),\
+                 pd.DataFrame(curr_df.case_OrganizationalEntity.value_counts()),\
+                 pd.DataFrame(curr_df.case_ActivityNumber.value_counts()),\
+                 pd.DataFrame(curr_df.case_BudgetNumber.value_counts()),\
+                 pd.DataFrame(curr_df.case_ProjectNumber.value_counts()));
