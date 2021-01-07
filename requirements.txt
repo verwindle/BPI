@@ -34,7 +34,7 @@ jupyter-contrib-core==0.3.3
 jupyter-core==4.6.3
 jupyter-nbextensions-configurator==0.4.1
 kiwisolver==1.2.0
-lxml==4.5.1
+lxml==4.6.2
 MarkupSafe==1.1.1
 matplotlib==3.2.2
 mistune==0.8.4
